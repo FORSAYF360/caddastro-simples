@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Boas vindas ao nosso site Music-Word </h1>
+    <br>
+    <pre>Garanta a sua diversão comprando   ingressos  para os melhores shows !!</pre>
+<pre>Aqui temos diversas opções de bandas e  inúmeros generos músicais  </pre>
+<pre></pre>
+<br>
+<h2>Para comprar ingressos e saber mais  sobre os shows  clik no nome da banda </h2>
+<br>
+<u>
+<li> <a href="https://wwww.OneOkRockshow.com.br"> One Ok Rock</a></li>     
+<li> <a href="https://www.metálicashow.com.br">Metálica</a> </li>
+<li> <a href="https://plantaeraizshow.com.br"> Planta e Raiz </a></li>
+<li><a href=https://www.osaviõsshow.com.br">Os Aviões</a> </li>
+<li> <a href="https://www.vejatodososshows.com.br">Click aqui para saber mais</a></li>
+</u>
+
+<h3>Para concorrer a 50% de descontos nos  ingressos  preencha   o formulário a baixo </h3>
+
+<p>Os campos com * são obrigatórios  </p>
+    <form action="">
+
+<fieldset>
+    <legend>dados pessoais</legend>
+</fieldset>
+<br>
+
+<label for="nome">*nome</label>
+<input type = "text" name = "nome" id = "nome" placeholder = "digite o seu nome" pattern="[A-z çáàâãäéèêëiìóòôõöúùûüýÿ]+"    title = "digite apenas letras" required >
+<label for="sobrenome">sobre nome</label>
+<input type = "text" name = "sobrenome" id = "sobrenome"placeholder = "digite seu sobrenome" pattern="[A-z çáàâãäéèêëiìóòôõöúùûüýÿ]+" title = "digite apenas letras"    >
+<label for="cpf">*cpf</label>
+<input type = "tel" name = "cpf" id = "cpf" size = "14" maxlength = "14" required  onkeypress = "mascaraCpf(this)" placeholder="digite seu cpf" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"                       > 
+<label for="rg">rg</label>
+<input type="text" name = "rg" id = "rg"placeholder = "digite seu rg" >
+<label for="genero">genero</label>
+<label for="masculino">masculino</label>
+        <input type = "radio" name = "genero" value = "masculino"  id = "masculino"> 
+    <label for="feminino" >feminino</label> 
+    <input type = "radio" name = "genero" value = "feminino"  id = "feminino">
+    
+<fieldset>
+    <legend>dados de endereço</legend>
+</fieldset>
+<br >
+
+
+<label for="cep">*cep</label>
+<input type = "tel" name = "cep" id = "cep" size = "9" maxlength = "9" onkeypress = "mascaraCep(this)"  placeholder="digite o cep" onblur="pesquisacep(this.value)" required >
+<label for="rua">*rua</label>
+<input type = "text" name = "rua" id = "rua" required placeholder="digite a rua">
+<label for="numero">*número</label >
+<input type = "text" name = "numero" id = "numero"  size = "4" required placeholder = "digite o número da rua"  pattern="^\d$"title = "digite apenas números" >
+<label for="bairro">*bairro</label>
+<input type = "text" name = "bairro" id = "bairro" required placeholder = "digite o bairro" >
+<label for="complemento">Complemento:</label>
+<input type = "text" name = "complemento" id = "complemento" placeholder = "digite um complemento" >
+<label for="cidade">*Cidade:</label>
+<input type = "text" name = "cidade" id = "cidade" placeholder = "digite a cidade" >
+<label for="estado">Estado:</label>
+<input type = "text" name = "estado" id = "estado"placehol = "digite o estado" >
+
+<fieldset>
+<legend>dados de contato</legend>    
+</fieldset>
+<br>
+
+<label for="telefonefixo">*Telefone Fixo:</label>
+<input type = "tel" name = "telefone" id = "telefone" size = "14" maxlength = "14" onkeypress = "mascaraTelefone(this)" placeholder = "digite o telefone"  required >
+<label for="celular">*Celular:</label>
+<input type = "tel" name = "celular" id = "celular" size = "15"  maxlength= "15" required onkeypress = "mascaraCelular(this)" placeholder = "digite o número de celular" > 
+<label for="email">E-mail</label>
+<input type = "email" name = "email" id = "email" placeholder="digite seu e-mail exemplo: testando2021@gmail.com" >
+
+<fieldset>
+    <legend>opções</legend>
+</fieldset>
+<br>
+
+<input type="button"onclick="limpar()" value="limpar">
+<input type = "submit" onclick = "validar()" value = "enviar formulário"      >    
+
+    </form>
+
+    <script src="scripts/limpaDados.js"></script>
+    <script src="scripts/pesquisaCep.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
